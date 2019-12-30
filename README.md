@@ -1,1 +1,1 @@
-# geodetic
+# geodesy-js
