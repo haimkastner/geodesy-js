@@ -1,0 +1,41 @@
+{
+  "name": "geodesy-js",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepublish" : "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "lib": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/haimkastner/geodesy-js.git"
+  },
+  "homepage": "https://github.com/haimkastner/geodesy-js",
+  "author": "Haim Kastner, Based on https://github.com/juergenpf/Geodesy Project",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "unitsnet-js": "^1.0.10"
+  },
+  "keywords": [
+    "geodesy",
+    "geodetic",
+    "distance",
+    "bearing",
+    "azimuth",
+    "destination",
+    "wgs84",
+    "coordinate"
+  ]
+}
