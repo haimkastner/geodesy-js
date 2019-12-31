@@ -1,10 +1,10 @@
 # geodesy-js
 
-A lightweight library to represents a location with an easy to use API (using [unitsnet-js](https://www.npmjs.com/package/unitsnet-js) API).
+A lightweight library represents a location with an easy to use API (using [unitsnet-js](https://www.npmjs.com/package/unitsnet-js) API).
 
-Supports getting the curve between two locations and getting a distinition location baed on curve data.
+Supports getting the curve between two locations and getting a destination location based on curve data.
 
-> The calculation is from the greate [Geodesy](https://github.com/juergenpf/Geodesy) project.
+> The calculations is from the greate [Geodesy](https://github.com/juergenpf/Geodesy) project.
 
 ## Install via NPM:
 
