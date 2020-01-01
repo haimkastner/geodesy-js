@@ -20,15 +20,15 @@ describe('#GeoLocation', () => {
   let secondGeoPoint: GeoPoint;
 
   it('Should be the same as geo point object', () => {
-    expect(geoLocation.geoCoordinates.Latitude.BaseValue).equals(geoPoint.Latitude.BaseValue);
-    expect(geoLocation.geoCoordinates.Longitude.BaseValue).equals(geoPoint.Longitude.BaseValue);
+    expect(geoLocation.Latitude.BaseValue).equals(geoPoint.Latitude.BaseValue);
+    expect(geoLocation.Longitude.BaseValue).equals(geoPoint.Longitude.BaseValue);
   });
 
   it('Should be the same destination as geo point calculations', () => {
     secondGeoLocation = geoLocation.destination(Angle.FromDegrees(10), Length.FromMeters(3000));
     secondGeoPoint = getDestinationGeoPoint(geoPoint, Angle.FromDegrees(10), Length.FromMeters(3000));
-    expect(secondGeoLocation.geoCoordinates.Latitude.BaseValue).equals(secondGeoPoint.Latitude.BaseValue);
-    expect(secondGeoLocation.geoCoordinates.Longitude.BaseValue).equals(secondGeoPoint.Longitude.BaseValue);
+    expect(secondGeoLocation.Latitude.BaseValue).equals(secondGeoPoint.Latitude.BaseValue);
+    expect(secondGeoLocation.Longitude.BaseValue).equals(secondGeoPoint.Longitude.BaseValue);
   });
 
   it('Should be the same distance as geo point calculations', () => {
