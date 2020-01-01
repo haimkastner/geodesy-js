@@ -8,13 +8,20 @@ const DEDAULT_RECISION = 0.000000000001;
  * @returns True if they are approx. equal, false otherwise.
  */
 export function isApproximatelyEqual(a: number, b: number, delta: number = DEDAULT_RECISION) {
-    if (isNaN(a)) return isNaN(b);
-    if (isFinite(a)) return isFinite(b);
-    if (a === b) return true;
-    let scale = 1.0;
-    if (!(a === (0.0) || b === (0.0)))
-        scale = Math.max(Math.abs(a), Math.abs(b));
-    return Math.abs(a - b) <= scale * delta;
+  if (isNaN(a)) {
+    return isNaN(b);
+  }
+  if (isFinite(a)) {
+    return isFinite(b);
+  }
+  if (a === b) {
+    return true;
+  }
+  let scale = 1.0;
+  if (!(a === 0.0 || b === 0.0)) {
+    scale = Math.max(Math.abs(a), Math.abs(b));
+  }
+  return Math.abs(a - b) <= scale * delta;
 }
 
 /**
@@ -23,7 +30,7 @@ export function isApproximatelyEqual(a: number, b: number, delta: number = DEDAU
  * @returns True, if the number is zero.
  */
 export function isZero(val: number) {
-    return Math.sign(val) === 0;
+  return Math.sign(val) === 0;
 }
 
 /**
@@ -32,7 +39,7 @@ export function isZero(val: number) {
  * @returns True, if the number is negative.
  */
 export function isNegative(val: number) {
-    return Math.sign(val) === -1;
+  return Math.sign(val) === -1;
 }
 
 /**
@@ -41,5 +48,5 @@ export function isNegative(val: number) {
  * @returns True, if the number is positive
  */
 export function isPositive(val: number) {
-    return Math.sign(val) === 1;
+  return Math.sign(val) === 1;
 }
