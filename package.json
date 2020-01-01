@@ -8,7 +8,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "test": "mocha -r ts-node/register tests/**/*.spec.ts",
-    "cover": "node \"node_modules\\nyc\\bin\\nyc.js\" npm run test"
+    "cover": "node \"node_modules/nyc/bin/nyc.js\" npm run test"
   },
   "main": "dist/index.js",
   "files": [
