@@ -1,5 +1,7 @@
 # geodesy-js
 
+[![Build Status](https://travis-ci.org/haimkastner/geodesy-js.svg?branch=master)](https://travis-ci.org/haimkastner/geodesy-js)
+
 A lightweight library represents a location with an easy to use API (using [unitsnet-js](https://www.npmjs.com/package/unitsnet-js) units structs).
 
 Supports getting the curve between two locations and getting a destination location based on curve data.
