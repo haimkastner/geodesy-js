@@ -16,14 +16,14 @@ describe('#Curve calculator', () => {
   };
 
   it('Get the correct geo distance', () => {
-    const geoPointsDistance = getDistance(geoPoint, secondPoint); // 319.988503908055 // 145357.85302257061
+    const geoPointsDistance = getDistance(geoPoint, secondPoint);  
     expect(geoPointsDistance.Meters)
       .above(145357.85)
       .below(145357.86);
   });
 
   it('Get the correct geo curve', () => {
-    const geoPointsDistance = getGeoPointsCurve(geoPoint, secondPoint); // 319.988503908055 // 145357.85302257061
+    const geoPointsDistance = getGeoPointsCurve(geoPoint, secondPoint);
     expect(geoPointsDistance.Distance.Meters)
       .above(145357.85)
       .below(145357.86);

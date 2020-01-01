@@ -1,6 +1,7 @@
 # geodesy-js
 
 [![Build Status](https://travis-ci.org/haimkastner/geodesy-js.svg?branch=master)](https://travis-ci.org/haimkastner/geodesy-js)
+[![Coverage Status](https://coveralls.io/repos/github/haimkastner/geodesy-js/badge.svg?branch=master)](https://coveralls.io/github/haimkastner/geodesy-js?branch=master)
 
 A lightweight library represents a location with an easy to use API (using [unitsnet-js](https://www.npmjs.com/package/unitsnet-js) units structs).
 
