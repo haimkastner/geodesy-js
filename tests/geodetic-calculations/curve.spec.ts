@@ -16,7 +16,7 @@ describe('#Curve calculator', () => {
   };
 
   it('Get the correct geo distance', () => {
-    const geoPointsDistance = getDistance(geoPoint, secondPoint);  
+    const geoPointsDistance = getDistance(geoPoint, secondPoint);
     expect(geoPointsDistance.Meters)
       .above(145357.85)
       .below(145357.86);

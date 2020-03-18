@@ -4,7 +4,7 @@ import { GeoCurve } from './models/geo-curve';
 import { GeoPoint } from './models/geo-point';
 
 /**
- * A Geo localtion in the world, allows easly API to the geo-calculation.
+ * A Geo localtion in the world, allows easy API to the geo-calculation.
  */
 export class GeoLocation {
   /**
@@ -37,9 +37,9 @@ export class GeoLocation {
   }
 
   /**
-   * Get distnation from current location by direction and distance.
-   * @param heading The distenation direction angle.
-   * @param distance The destination distance from current location.
+   * Get destination from current location by direction and distance.
+   * @param heading The destination direction, as unitsnet-js Angle.
+   * @param distance The destination distance from current location, as unitsnet-js Length.
    * @returns The destinition location.
    */
   public destination(heading: Angle, distance: Length): GeoLocation {
@@ -47,9 +47,9 @@ export class GeoLocation {
   }
 
   /**
-   * Get the distnace from current location to the given location.
+   * Get the distnace between current location and the given location.
    * @param geoLocation The location to get the distance from.
-   * @returns The distnace between th locations.
+   * @returns The distnace between the locations, as Unitsnet-js Length.
    */
   public distance(geoLocation: GeoLocation): Length {
     return getDistance(this.geoCoordinates, geoLocation.geoCoordinates);

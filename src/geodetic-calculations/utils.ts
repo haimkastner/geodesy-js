@@ -1,4 +1,4 @@
-const DEDAULT_RECISION = 0.000000000001;
+const DEFAULT_PRECISION = 0.000000000001;
 
 /**
  * Test whether or not a double is equal to another double in the limits of a given precision.
@@ -7,7 +7,7 @@ const DEDAULT_RECISION = 0.000000000001;
  * @param delta The precision to use.
  * @returns True if they are approx. equal, false otherwise.
  */
-export function isApproximatelyEqual(a: number, b: number, delta: number = DEDAULT_RECISION) {
+export function isApproximatelyEqual(a: number, b: number, delta: number = DEFAULT_PRECISION) {
   if (isNaN(a)) {
     return isNaN(b);
   }
@@ -25,28 +25,19 @@ export function isApproximatelyEqual(a: number, b: number, delta: number = DEDAU
 }
 
 /**
- * Test wether a double is zero.
+ * Test whether a double is zero.
  * @param val The value to test.
- * @returns True, if the number is zero.
+ * @returns True, if the number is zero, false otherwise.
  */
 export function isZero(val: number) {
   return Math.sign(val) === 0;
 }
 
 /**
- * Test wether a double is negative.
+ * Test whether a double is negative.
  * @param val The value to test.
- * @returns True, if the number is negative.
+ * @returns True, if the number is negative, false otherwise.
  */
 export function isNegative(val: number) {
   return Math.sign(val) === -1;
-}
-
-/**
- * Test wether a double is positive
- * @param val The value to test
- * @returns True, if the number is positive
- */
-export function isPositive(val: number) {
-  return Math.sign(val) === 1;
 }
