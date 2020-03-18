@@ -1,6 +1,6 @@
 import { Angle, Length } from 'unitsnet-js';
 import { GeoPoint } from '../models';
-import { PRECISION, WGS84_FLATTENING, WGS84_MAGOR_AXIS, WGS84_MINOR_AXIS } from './constants';
+import { PRECISION, WGS84_FLATTENING, WGS84_MAJOR_AXIS, WGS84_MINOR_AXIS } from './constants';
 import { isApproximatelyEqual } from './utils';
 
 /**
@@ -13,7 +13,7 @@ import { isApproximatelyEqual } from './utils';
  * @returns The coordinates of the final location of the traveling.
  */
 export function getDestinationGeoPoint(start: GeoPoint, startBearing: Angle, distance: Length): GeoPoint {
-  const majorAxis = WGS84_MAGOR_AXIS;
+  const majorAxis = WGS84_MAJOR_AXIS;
   const minorAxis = WGS84_MINOR_AXIS;
   const aSquared = majorAxis * majorAxis;
   const bSquared = minorAxis * minorAxis;
@@ -98,7 +98,7 @@ export function getDestinationGeoPoint(start: GeoPoint, startBearing: Angle, dis
   );
 
   // eq. 9
-  // This fixes the pole crossing defect spotted by Matt Feemster.  When a path
+  // This fixes the pole crossing defect spotted by Matt Feemster. When a path
   // passes a pole and essentially crosses a line of latitude twice - once in
   // each direction - the longitude calculation got messed up.  Using Atan2
   // instead of Atan fixes the defect.  The change is in the next 3 lines.

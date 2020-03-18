@@ -1,7 +1,7 @@
 import { Angle, Length } from 'unitsnet-js';
 import { GeoPoint } from '../models';
 import { GeoCurve } from '../models/geo-curve';
-import { PRECISION, TWO_PI, WGS84_FLATTENING, WGS84_MAGOR_AXIS, WGS84_MINOR_AXIS } from './constants';
+import { PRECISION, TWO_PI, WGS84_FLATTENING, WGS84_MAJOR_AXIS, WGS84_MINOR_AXIS } from './constants';
 import { isNegative, isZero } from './utils';
 
 /**
@@ -9,7 +9,7 @@ import { isNegative, isZero } from './utils';
  * This is the solution to the inverse geodetic problem.
  * @param start starting coordinates
  * @param end ending coordinates
- * @param calculateBearing Is bearing data needed.
+ * @param calculateBearing is bearing data needed.
  */
 function calculateCurve(start: GeoPoint, end: GeoPoint, calculateBearing: boolean): GeoCurve | Length {
   //
@@ -18,7 +18,7 @@ function calculateCurve(start: GeoPoint, end: GeoPoint, calculateBearing: boolea
   //
 
   // get constants
-  const majorAxis = WGS84_MAGOR_AXIS;
+  const majorAxis = WGS84_MAJOR_AXIS;
   const minorAxis = WGS84_MINOR_AXIS;
   const flattening = WGS84_FLATTENING;
 
