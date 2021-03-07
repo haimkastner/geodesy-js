@@ -1,13 +1,13 @@
 # geodesy-js
 
-[![Build Status](https://travis-ci.org/haimkastner/geodesy-js.svg?branch=master)](https://travis-ci.org/haimkastner/geodesy-js)
-[![Coverage Status](https://coveralls.io/repos/github/haimkastner/geodesy-js/badge.svg?branch=master)](https://coveralls.io/github/haimkastner/geodesy-js?branch=master)
+[![CI CD Status](https://github.com/haimkastner/geodesy-js/workflows/geodesy-js/badge.svg?branch=master)](https://github.com/haimkastner/geodesy-js/actions)
+[![Tests Coverage Status](https://coveralls.io/repos/github/haimkastner/geodesy-js/badge.svg?branch=master)](https://coveralls.io/github/haimkastner/geodesy-js?branch=master)
 
 A lightweight library represents a location with an easy to use API (using [unitsnet-js](https://www.npmjs.com/package/unitsnet-js) units structs).
 
 Supports getting the curve between two locations and getting a destination location based on curve data.
 
-> The calculations is from the greate [Geodesy](https://github.com/juergenpf/Geodesy) project.
+> The calculations is from the great [Geodesy](https://github.com/juergenpf/Geodesy) project.
 
 ## Install via NPM:
 
